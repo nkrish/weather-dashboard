@@ -1,0 +1,162 @@
+:root {
+    --primary: #D9E8E8;
+    --secondary: #D9E8E8;
+    --tertiary: #788585;
+    --white: #FFFFFF;
+    --light: #D9E8E8;
+    --dark: #2E3E50;
+    --border-radius: .3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.625rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+
+body {
+    background-color: var(--white);
+    margin: 0;
+    padding: 0;
+    color: var(--dark);
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.main-header {
+    background-color: blue;
+    color: #ffffff;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.panel-left {
+    width: 25%;
+    height: 100vh;
+    background-color: rgb(231, 235, 219);
+    padding: 10px;
+}
+
+.panel-main {
+    width: 75%;
+    padding: 10px;
+}
+
+.panel-summary {
+    border: solid 1px #788585;
+    padding: 15px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #a7afaf;
+}
+
+.btn-main {
+    background-color: #5098E6;
+    color: #ffffff;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #a7afaf;
+}
+
+.btn-warning {
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #f3ac41;
+    border: 1px solid #f3ac41;
+}
+
+.btn-secondary {
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #a7afaf;
+}
+
+.search-history-item {
+    padding: 5px;
+    border-radius: 4px;
+    width: 100%;
+    margin: 5px;
+    border: solid 1px #788585;
+}
+
+/************************************************************ 
+  Card displaying the daily forecast data 
+************************************************************/
+.forecast-title {
+    padding: 5px 10px;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.forecast-card {
+    float: left;
+    width: 200px;
+    border: 1px solid #2D3E50;
+    border-radius: 3px;
+    padding: 6px;
+    background-color: #2D3E50;
+    color: #ffffff;
+    margin: 6px;
+}
+
+.forecast-card div {
+    margin-bottom: 12px;
+}
+
+.forecast-card-icon {
+    width: auto;
+    height: 100px;
+}
+
+/************************************************************ 
+  UV Index Scale 
+  Refer: https://www.epa.gov/sunsafety/uv-index-scale-0
+************************************************************/
+.uvi {
+    padding: 3px 8px;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+}
+
+.uvi-favorable {
+    background-color: #289500;
+}
+
+.uvi-moderate {
+    background-color: #F7E400;
+}
+
+.uvi-severe {
+    background-color: #D80010;
+}

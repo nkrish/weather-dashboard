@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main class="main-container">
+        <section class="panel-left">
+            <h2>Search for a City:</h2>
+            <input type="text" id="txtCity" class="input-field" />
+            <button id="btnSearch" class="btn-main">Search</button>
+            <hr />
+
+            <button id="btnClear" class="btn-warning">Clear History</button>
+            <div id="search-history">
+
+            </div>
+        </section>
+        <section class="panel-main">
+            <div id="weatherSummary" class="panel-summary">
+
+            </div>
+            <div class="forecast-title">5-Day Forcast:</div>
+            <div id="weatherForecast">
+
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
