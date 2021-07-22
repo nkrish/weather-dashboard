@@ -31,7 +31,7 @@ var weatherDashboard = {
 
   // Function to display the weather details
   displayWeather: function (data) {
-    var today = moment.unix(data.dt).format("M/D/y");
+    var today = moment().format("M/D/y");
     var weatherElem = document.getElementById("weatherSummary");
 
     //Remove all child elements
@@ -92,7 +92,7 @@ var weatherDashboard = {
     cardElem.appendChild(titleElem);
 
     //Create and add temparature element
-    var imgUrl = "http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png";
+    var imgUrl = "https://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png";
     var iconElem = document.createElement("img");
     iconElem.setAttribute("src", imgUrl);
     iconElem.className = "forecast-card-icon";
@@ -121,8 +121,8 @@ var weatherDashboard = {
   searchWeather: function () {
     var cityElem = document.getElementById("txtCity");
     this.city = toTitleCase(cityElem.value.trim());
-    
-    var queryWeatherBaseURL = "http://api.openweathermap.org/data/2.5/weather?&appid=" + APIKey;
+
+    var queryWeatherBaseURL = "https://api.openweathermap.org/data/2.5/weather?&appid=" + APIKey;
     var queryWeatherURL = queryWeatherBaseURL + "&q=" + this.city;
 
     fetch(queryWeatherURL)
